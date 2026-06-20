@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arte em Videogames — Como hardware, luz e som constroem a linguagem visual dos jogos</title>
+  <meta name="description" content="Um estudo sobre direção de arte em videogames: pixel art, low poly, paleta de cor, UI e como o som completa a atmosfera.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Pixelify+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="logo" href="#hero">ARTE<span>//</span>VG</a>
+      <ul class="nav-links">
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#eras">Eras</a></li>
+        <li><a href="#personagens">Personagens</a></li>
+        <li><a href="#cor-luz">Cor &amp; Luz</a></li>
+        <li><a href="#ui">UI</a></li>
+        <li><a href="#som">Som</a></li>
+        <li><a href="#exemplos">Exemplos</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+
+  <!-- ============================== HERO ============================== -->
+  <header class="hero" id="hero">
+    <div class="wrap">
+      <span class="eyebrow">Um estudo de direção de arte</span>
+      <h1>A arte por trás do jogo</h1>
+      <p class="lede">Toda escolha visual em um jogo nasce de uma restrição — de hardware, de tempo ou de intenção. Este site disseca como pixel, polígono, luz e som se tornam linguagem.</p>
+
+      <p class="intro">A história dos jogos começa em meados dos anos 50/60, quando cientistas da computação projetavam simulações simples em minicomputadores e mainframes. "Spacewar!", desenvolvido por estudantes do MIT em 1962, é considerado um dos primeiros jogos feitos para uma tela de vídeo; pouco depois, Computer Space e Pong levariam essa ideia aos arcades. O sucesso de Pong gerou ondas de clones tanto nos fliperamas quanto em casa — ciclos de expansão e declínio movidos por saturação de mercado e falta de inovação, um padrão que a indústria repetiria várias vezes.</p>
+
+      <div class="eflow-strip" aria-hidden="true">
+        <span style="background:#0b0f14;border-radius:0;"></span>
+        <span style="background:#10161d;border-radius:0;"></span>
+        <span style="background:#182230;border-radius:0;"></span>
+        <span style="background:#21303f;border-radius:1px;"></span>
+        <span style="background:#2b3946;border-radius:1px;"></span>
+        <span style="background:#355163;border-radius:2px;"></span>
+        <span style="background:#3f6b75;border-radius:2px;"></span>
+        <span style="background:#4f8893;border-radius:3px;"></span>
+        <span style="background:#6fb8c9;border-radius:4px;"></span>
+        <span style="background:#82b7ac;border-radius:4px;"></span>
+        <span style="background:#9bb091;border-radius:5px;"></span>
+        <span style="background:#b8a679;border-radius:6px;"></span>
+        <span style="background:#c99662;border-radius:7px;box-shadow:0 0 10px rgba(201,122,74,.3);"></span>
+        <span style="background:#c97a4a;border-radius:8px;box-shadow:0 0 12px rgba(201,122,74,.4);"></span>
+        <span style="background:#d4895a;border-radius:9px;box-shadow:0 0 14px rgba(201,122,74,.5);"></span>
+        <span style="background:#e0986a;border-radius:10px;box-shadow:0 0 16px rgba(224,152,106,.55);"></span>
+      </div>
+      <div class="eflow-caption">
+        <span>4 cores · 8x8px</span>
+        <span>Physically Based Rendering</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================== HARDWARE ============================== -->
+  <section id="hardware">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Linha do tempo</span>
+        <h2>A régua que limitou (e libertou) a arte</h2>
+        <p>Nove gerações de hardware, nove conjuntos diferentes de restrições. Cada cartão abaixo é uma negociação distinta entre o que a máquina permitia e o que os artistas conseguiram fazer apesar disso.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="gen-card reveal">
+          <span class="num">01</span>
+          <h3>Primeira Geração</h3>
+          <span class="years">1972–1980</span>
+          <p>Magnavox Odyssey, Pong, Coleco Telstar.</p>
+        </article>
+        <article class="gen-card reveal">
+          <span class="num">02</span>
+          <h3>Segunda Geração</h3>
+          <span class="years">1976–1992</span>
+          <p>Fairchild Channel F, Atari 2600, Mattel Intellivision.</p>
+        </article>
+        <article class="gen-card reveal">
+          <span class="num">03</span>
+          <h3>Terceira Geração</h3>
+          <span class="years">1983–2003</span>
+          <p>Sega Master System, Atari 7800, NES.</p>
+        </article>
+        <article class="gen-card reveal">
+          <span class="num">04</span>
+          <h3>Quarta Geração</h3>
+          <span class="years">1987–2004</span>
+          <p>TurboGrafx-16, Sega Genesis, Neo Geo, SNES.</p>
+        </article>
+        <article class="gen-card reveal">
+          <span class="num">05</span>
+          <h3>Quinta Geração</h3>
+          <span class="years">1993–2006</span>
+          <p>3DO, Sega Saturn, PlayStation, Nintendo 64.</p>
+        </article>
+        <article class="gen-card reveal">
+          <span class="num">06</span>
+          <h3>Sexta Geração</h3>
+          <span class="years">1998–2013</span>
+          <p>Dreamcast, PlayStation 2, GameCube, Xbox.</p>
+        </article>
+        <article class="gen-card reveal">
+          <span class="num">07</span>
+          <h3>Sétima Geração</h3>
+          <span class="years">2005–2017</span>
+          <p>Xbox 360, PlayStation 3, Nintendo Wii.</p>
+        </article>
+        <article class="gen-card reveal">
+          <span class="num">08</span>
+          <h3>Oitava Geração</h3>
+          <span class="years">2012–2020</span>
+          <p>PlayStation 4, Xbox One, Wii U.</p>
+        </article>
+        <article class="gen-card reveal">
+          <span class="num">09</span>
+          <h3>Nona Geração</h3>
+          <span class="years">2020–presente</span>
+          <p>Xbox Series X/S, PlayStation 5.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== ERAS ============================== -->
+  <section id="eras">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Da abstração ao fotorrealismo</span>
+        <h2>Quatro eras, quatro problemas diferentes</h2>
+        <p>A "arte" de cada geração não era "estilo", e sim, a resposta visível a uma limitação técnica específica.</p>
+      </div>
+
+      <div class="bento">
+        <article class="b-art reveal">
+          <span class="tag">Gen 1–2</span>
+          <h3>Abstração e Símbolo</h3>
+          <p>Com paleta limitada a 2 ou 4 cores, a arte tinha um único objetivo: sugerir algo concreto com o mínimo de informação. O jogador preenchia as lacunas com a imaginação. E a box art, fora da tela, carregava a narrativa visual que o hardware não conseguia.</p>
+          <div class="canvas viz-limited" aria-hidden="true">
+            <span style="background:#0b0f14"></span><span style="background:#6fb8c9"></span><span style="background:#6fb8c9"></span><span style="background:#0b0f14"></span>
+            <span style="background:#0b0f14"></span><span style="background:#6fb8c9"></span><span style="background:#6fb8c9"></span><span style="background:#0b0f14"></span>
+            <span style="background:#6fb8c9"></span><span style="background:#6fb8c9"></span><span style="background:#6fb8c9"></span><span style="background:#6fb8c9"></span>
+            <span style="background:#0b0f14"></span><span style="background:#6fb8c9"></span><span style="background:#0b0f14"></span><span style="background:#6fb8c9"></span>
+          </div>
+        </article>
+
+        <article class="b-art reveal">
+          <span class="tag">Gen 3–4</span>
+          <h3>Pixels e Sprites</h3>
+          <p>Cada pixel de sprite custava memória, então cada um precisava de propósito: silhuetas reconhecíveis, cores diretas. O parallax scrolling, com camadas se movendo em velocidades diferentes, deu profundidade a cenários que ainda eram tecnicamente planos.</p>
+          <div class="canvas viz-parallax" aria-hidden="true">
+            <span class="band" style="top:0; background:#1f2a35; opacity:.5;"></span>
+            <span class="band" style="top:22%; background:#2b3946; opacity:.7;"></span>
+            <span class="band" style="top:44%; background:#3f6b75; opacity:.8;"></span>
+            <span class="band" style="top:66%; background:#6fb8c9; opacity:.9;"></span>
+          </div>
+        </article>
+
+        <article class="b-art reveal">
+          <span class="tag">Gen 5–6</span>
+          <h3>A Revolução 3D</h3>
+          <p>Polígonos eram caros, então tudo virou escultura digital angular. O estilo "low poly" — que hoje foi revivido por jogos indie, nasceu da necessidade de sugerir volume com o menor número de faces possível.</p>
+          <div class="canvas viz-facets" aria-hidden="true">
+            <span class="tri" style="left:30%; top:5%; border-width:0 38px 50px 38px; border-color:transparent transparent #6fb8c9 transparent; transform:rotate(8deg);"></span>
+            <span class="tri" style="left:15%; top:40%; border-width:0 30px 45px 30px; border-color:transparent transparent #3f6b75 transparent; transform:rotate(-12deg);"></span>
+            <span class="tri" style="left:55%; top:35%; border-width:0 34px 48px 34px; border-color:transparent transparent #c97a4a transparent; transform:rotate(20deg);"></span>
+            <span class="tri" style="left:40%; top:55%; border-width:0 26px 38px 26px; border-color:transparent transparent #7a4a30 transparent; transform:rotate(-4deg);"></span>
+          </div>
+        </article>
+
+        <article class="b-art reveal">
+          <span class="tag">Gen 7–9</span>
+          <h3>Realismo e Estilização</h3>
+          <p>Com a barreira técnica praticamente removida, Physically Based Rendering fez materiais reagirem à luz como na vida real. E a escolha de não ser realista (cel shading, aquarela, pintura a óleo) virou a declaração artística mais forte da geração.</p>
+          <div class="canvas" style="display:flex; align-items:center; justify-content:center;" aria-hidden="true">
+            <div class="viz-sphere"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PERSONAGENS ============================== -->
+  <section id="personagens">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Criação de personagens</span>
+        <h2>Do silhueta à escultura digital</h2>
+      </div>
+
+      <div class="bento">
+        <article class="b-text-w reveal" style="grid-row: span 3;">
+          <span class="tag">Texturas &amp; Volume</span>
+          <h3>Três respostas para o mesmo problema</h3>
+          <p>Cada geração reinventou como fazer alguém reconhecer um personagem com os recursos disponíveis. No pixel art, a resposta foi a silhueta: poucos pixels, cores chapadas, leitura instantânea até mesmo à distância. No low poly, o problema virou escultura: cada vértice custava processamento, então os artistas aprenderam a sugerir volume com o mínimo de faces, deixando as arestas visíveis como parte do estilo.</p>
+          <p>Hoje, com motores PBR, a textura virou física: metal, pele e tecido reagem à luz de formas distintas. A "arte" está em decidir o quanto de realismo serve à história, e não em quanto a máquina aguenta.</p>
+        </article>
+
+        <article class="b-art reveal">
+          <span class="tag">Evolução</span>
+          <h3>8-bit → Low Poly → PBR</h3>
+          <div class="canvas viz-triptych" aria-hidden="true">
+            <div class="head pixel"></div>
+            <div class="head facet"></div>
+            <div class="head smooth"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== COR & LUZ ============================== -->
+  <section id="cor-luz">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Paleta &amp; psicologia</span>
+        <h2>O que a luz esconde</h2>
+        <p>A cor não é decoração: é direção. E a forma mais simples de provar isso é olhar pra onde os jogos colocam a única fonte de luz quente em um ambiente frio.</p>
+      </div>
+
+      <div class="bento">
+        <article class="b-art reveal">
+          <span class="tag">Demonstração</span>
+          <h3>Caverna: luz como escolha</h3>
+          <div class="canvas viz-cave" aria-hidden="true">
+            <div class="beam"></div>
+            <span class="rock" style="left:5%; border-width:0 40px 35px 0;"></span>
+            <span class="rock" style="left:70%; border-width:0 0 45px 50px;"></span>
+            <span class="rock" style="left:40%; border-width:0 25px 25px 25px; border-color:transparent transparent #05080a transparent;"></span>
+            <span class="dust" style="top:30%; left:48%;"></span>
+            <span class="dust" style="top:45%; left:52%;"></span>
+            <span class="dust" style="top:60%; left:46%;"></span>
+          </div>
+        </article>
+
+        <article class="b-text-v reveal">
+          <span class="tag">Isolamento</span>
+          <p>Jogos 2D que retratam cavernas subterrâneas ou abismos oceânicos costumam recorrer à mesma fórmula: paleta restrita a tons frios. azuis profundos, ciano dessaturado, quase nenhum vermelho, combinada a sombras duras, sem meio-tom. O cérebro associa ausência de luz quente à ausência de outras pessoas.</p>
+        </article>
+
+        <article class="b-text-v reveal">
+          <span class="tag">Direção</span>
+          <p>Um único feixe quente cortando um ambiente frio funciona como holofote emocional: não ilumina o cenário inteiro, ilumina uma direção, Level Design é o mais importante aqui. É a lógica por trás de jogos como Hollow Knight, Inside, Limbo e Subnautica: a cor informa sobre segurança antes de qualquer texto ou HUD.</p>
+        </article>
+
+        <article class="b-palette reveal" style="grid-column: span 4;">
+          <div class="palette-strip" aria-hidden="true">
+            <div class="swatch" style="background:#0b0f14;"><span>#0B0F14</span></div>
+            <div class="swatch" style="background:#1f2a35;"><span>#1F2A35</span></div>
+            <div class="swatch" style="background:#3f6b75;"><span>#3F6B75</span></div>
+            <div class="swatch" style="background:#6fb8c9;"><span>#6FB8C9</span></div>
+            <div class="swatch" style="background:#c97a4a;"><span>#C97A4A</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== UI ============================== -->
+  <section id="ui">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Design de interface</span>
+        <h2>Interfaces que envelheceram (e a comunidade que consertou)</h2>
+      </div>
+
+      <div class="bento">
+        <article class="b-mockup reveal">
+          <span class="tag">Comparação</span>
+          <h3>DS clássico vs. ROM hack</h3>
+          <div class="canvas viz-mockup" style="height: calc(100% - 2.2rem);" aria-hidden="true">
+            <div class="mockup-panel classic">
+              <span class="label">UI Clássica · DS</span>
+              <span class="row"></span><span class="row"></span><span class="row"></span>
+              <span class="row"></span><span class="row"></span><span class="row"></span>
+              <span class="row"></span><span class="row"></span>
+            </div>
+            <div class="mockup-panel modern">
+              <span class="label">UI Modernizada · ROM Hack</span>
+              <span class="row"></span><span class="row"></span><span class="row"></span>
+              <span class="row"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="b-text-w reveal" style="grid-row: span 3;">
+          <span class="tag">Clareza não é luxo</span>
+          <p>RPGs de Nintendo DS trabalhavam com tela pequena, paleta limitada e fontes desenhadas pixel a pixel. O resultado eram menus densos, ícones minúsculos e pouco espaço entre elementos, porque cada pixel de tela era caro.</p>
+          <p>Décadas depois, ROM hacks como <b style="color:var(--text)">Pokémon Renegade Platinum</b> e <b style="color:var(--text)">Pokémon Sacred Gold</b> reconstroem essas mesmas telas com tipografia maior, contraste mais alto e hierarquia visual clara. Comparar as duas gerações lado a lado é ver trinta anos de design de interface condensados em duas telas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SOM ============================== -->
+  <section id="som">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Arte &amp; trilha sonora</span>
+        <h2>O som da escuridão</h2>
+      </div>
+
+      <div class="bento">
+        <article class="b-text-v reveal">
+          <p>Direção de arte sombria raramente trabalha sozinha. Uma paleta de cinzas profundos e luz escassa pede, quase por instinto, uma trilha em tom menor: acordes que demoram a resolver, percussão espaçada, batidas que deixam silêncio entre si em vez de preencher cada compasso. Onde o Sound Design se encaixa.</p>
+        </article>
+
+        <article class="b-art reveal">
+          <span class="tag">Negative space</span>
+          <h3>Batida espaçada</h3>
+          <div class="canvas eq-bars" aria-hidden="true">
+            <span style="height:30%; animation-delay:0s;"></span>
+            <span style="height:70%; animation-delay:.15s;"></span>
+            <span style="height:20%; animation-delay:.3s;"></span>
+            <span style="height:85%; animation-delay:.45s;"></span>
+            <span style="height:15%; animation-delay:.6s;"></span>
+            <span style="height:55%; animation-delay:.75s;"></span>
+            <span style="height:10%; animation-delay:.9s;"></span>
+            <span style="height:95%; animation-delay:1.05s;"></span>
+            <span style="height:25%; animation-delay:1.2s;"></span>
+            <span style="height:60%; animation-delay:1.35s;"></span>
+            <span style="height:12%; animation-delay:1.5s;"></span>
+            <span style="height:75%; animation-delay:1.65s;"></span>
+          </div>
+        </article>
+
+        <article class="b-text-v reveal">
+          <p>Esse vazio sonoro funciona como o equivalente musical de uma sombra dura: o que não toca pesa tanto quanto o que toca. É por isso que jogos atmosféricos evitam trilhas densas. O silêncio é tão importante quanto os sons.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== EXEMPLOS ============================== -->
+  <section id="exemplos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Estudos de caso</span>
+        <h2>Estilização como identidade visual</h2>
+        <p>Jogos que transformaram limitação ou escolha deliberada em assinatura visual reconhecível.</p>
+      </div>
+
+      <div class="examples-grid">
+        <article class="example-card reveal">
+          <div class="chip" style="background:linear-gradient(135deg,#6fb8c9,#0b0f14);"></div>
+          <h3>Cel Shading</h3>
+          <p style="font-size:.85rem;">Renderiza gráficos 3D para parecerem desenho animado feito à mão, com contornos pretos e cores sólidas.</p>
+          <ul>
+            <li><b>The Wind Waker</b> — visual cartoon vibrante no lugar do realismo; envelheceu muito bem.</li>
+            <li><b>Jet Set Radio</b> — misturou cel shading com grafite e cultura urbana.</li>
+            <li><b>Persona 5</b> — UI sofisticada com cortes dinâmicos e cores pop.</li>
+          </ul>
+        </article>
+
+        <article class="example-card reveal">
+          <div class="chip" style="background:linear-gradient(135deg,#c97a4a,#7a4a30);"></div>
+          <h3>Low Poly &amp; PS1 Retrô</h3>
+          <p style="font-size:.85rem;">A limitação de polígonos da 5ª geração criou um visual angular hoje usado por nostalgia e charme abstrato.</p>
+          <ul>
+            <li><b>Final Fantasy VII</b> — fundos pré-renderizados, atmosfera quase teatral.</li>
+            <li><b>Jogos indie de horror</b> — a baixa definição esconde detalhes e alimenta a imaginação.</li>
+          </ul>
+        </article>
+
+        <article class="example-card reveal">
+          <div class="chip" style="background:linear-gradient(135deg,#9bb091,#3f6b75);"></div>
+          <h3>Fusão de 2D e 3D</h3>
+          <p style="font-size:.85rem;">Modelos 3D com câmera restrita ou texturas que imitam arte tradicional.</p>
+          <ul>
+            <li><b>Okami</b> — mundo 3D renderizado como pintura sumi-e em movimento.</li>
+            <li><b>Guilty Gear Strive</b> — motores 3D avançados gerando sprites quadro a quadro.</li>
+            <li><b>Cuphead</b> — influenciou o 3D a buscar a fluidez da animação "rubber hose".</li>
+          </ul>
+        </article>
+
+        <article class="example-card reveal">
+          <div class="chip" style="background:linear-gradient(135deg,#e0986a,#6fb8c9);"></div>
+          <h3>Atmosférica e Não-Fotorrealista</h3>
+          <p style="font-size:.85rem;">Iluminação, sombra e cor criando humor específico, sem buscar realismo fotográfico.</p>
+          <ul>
+            <li><b>Journey</b> — formas simples, areia e tecido para uma experiência poética.</li>
+            <li><b>Borderlands</b> — contornos pretos sobre texturas realistas, como uma HQ jogável.</li>
+            <li><b>Hi-Fi Rush</b> — cel shading com pop-art em sincronia com a música.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:.5rem;">
+      <span>Arte em Videogames — projeto de estudo</span>
+      <span>Hardware, luz e som como linguagem visual</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
