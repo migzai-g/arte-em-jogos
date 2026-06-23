@@ -1,4 +1,4 @@
-// Menu mobile
+
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -13,7 +13,7 @@ if (navToggle && navLinks) {
   });
 }
 
-// Reveal das celulas do bento ao entrar na viewport
+
 const revealEls = document.querySelectorAll('.reveal');
 
 if ('IntersectionObserver' in window && revealEls.length) {
