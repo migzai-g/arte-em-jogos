@@ -1,8 +1,4 @@
-/* =========================================================
-   ARTE EM VIDEOGAMES — design tokens
-   Paleta: abismo frio (void/frost) cortado por luz quente (ember),
-   ecoando a tese do site — luz direcional contra escuridão fria.
-   ========================================================= */
+
 
 :root {
   --void: #0b0f14;
@@ -87,9 +83,7 @@ h1, h2, h3 {
 
 p { color: var(--text-dim); margin: .6rem 0 0; }
 
-/* =========================================================
-   NAV
-   ========================================================= */
+
 
 .site-nav {
   position: sticky;
@@ -164,9 +158,6 @@ p { color: var(--text-dim); margin: .6rem 0 0; }
   .nav-toggle { display: block; }
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
 
 .hero { padding: 4.5rem 0 3rem; }
 
@@ -187,7 +178,6 @@ p { color: var(--text-dim); margin: .6rem 0 0; }
   margin-top: 1.4rem;
 }
 
-/* evolution strip — do bloco bruto ao gradiente suave */
 .eflow-strip {
   display: flex;
   gap: 2px;
@@ -210,9 +200,7 @@ p { color: var(--text-dim); margin: .6rem 0 0; }
   margin-top: .5rem;
 }
 
-/* =========================================================
-   SECTION HEADERS
-   ========================================================= */
+
 
 section { padding: 3.2rem 0; }
 
@@ -225,9 +213,7 @@ section + section { border-top: 1px solid var(--mist-soft); }
   margin-top: .6rem;
 }
 
-/* =========================================================
-   BENTO GRID SYSTEM
-   ========================================================= */
+
 
 .bento {
   display: grid;
@@ -283,10 +269,6 @@ section + section { border-top: 1px solid var(--mist-soft); }
   .b-art .canvas { min-height: 160px; }
 }
 
-/* =========================================================
-   PALETTE SWATCH
-   ========================================================= */
-
 .palette-strip {
   display: flex;
   height: 100%;
@@ -308,9 +290,7 @@ section + section { border-top: 1px solid var(--mist-soft); }
   color: #fff;
 }
 
-/* =========================================================
-   GENERATIVE VISUALS — a tecnica explicada vira a propria imagem
-   ========================================================= */
+
 
 .viz-limited {
   display: grid;
@@ -444,9 +424,6 @@ section + section { border-top: 1px solid var(--mist-soft); }
   50% { transform: scaleY(1); }
 }
 
-/* =========================================================
-   HARDWARE TIMELINE
-   ========================================================= */
 
 .timeline {
   display: grid;
@@ -478,9 +455,6 @@ section + section { border-top: 1px solid var(--mist-soft); }
   .timeline { grid-template-columns: 1fr; }
 }
 
-/* =========================================================
-   EXEMPLOS GRID
-   ========================================================= */
 
 .examples-grid {
   display: grid;
@@ -510,9 +484,6 @@ section + section { border-top: 1px solid var(--mist-soft); }
   .examples-grid { grid-template-columns: 1fr; }
 }
 
-/* =========================================================
-   REVEAL ON SCROLL
-   ========================================================= */
 
 .reveal { opacity: 0; transform: translateY(14px); transition: opacity .55s ease, transform .55s ease; }
 .reveal.is-visible { opacity: 1; transform: none; }
@@ -523,9 +494,6 @@ section + section { border-top: 1px solid var(--mist-soft); }
   .eq-bars span { animation: none; }
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
 
 footer {
   border-top: 1px solid var(--mist-soft);
