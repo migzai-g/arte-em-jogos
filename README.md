@@ -10,9 +10,3 @@ Este projeto foi construído sem o uso de frameworks, focando nos fundamentos mo
 - CSS Art e Elementos Visuais: Substituição de assets de imagem por formas criadas via CSS (gradientes radiais/cônicos, `clip-path` e manipulação de bordas), reduzindo o peso da página e demonstrando controle de renderização nativa.
 - Acessibilidade e Semântica: Implementação de atributos `aria-*` para o menu mobile e tags semânticas do HTML5 para estruturar as análises de arte.
 
-
-Clone o repo:
-   Abra o seu terminal e rode o comando abaixo para baixar o código para a sua máquina: 
-```bash
-   git clone [https://github.com/migzai-g/arte-em-jogos.git](https://github.com/migzai-g/arte-em-jogos.git)
-
